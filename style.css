@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Jokerman';
+  src: url('fonts/JOKERMAN.TTF') format('woff2'),
+       url('fonts/JOKERMAN.TTF') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
