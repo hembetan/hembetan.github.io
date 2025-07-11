@@ -3,23 +3,41 @@ html {
 }
 
 body {
-    font-family: sans-serif;
     margin: 0;
-    background-color: #015daa;
-    color: #015daa;
+    background-color: #ffff66;
+}
+
+.headerdiv {
+    background-color: #cc0066;
 }
 
 header {
-    background-color: #fbaf35;
-    padding: 0.1rem;
+    background-color: #cc0066;
+    /* padding: 0.1rem; */
     text-align: center;
-    font-family: "Alfa Slab One", serif;
-    font-weight: normal;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-left: 0;
 }
 
+h1 {
+    padding-left: 1rem;
+    margin: 0;
+    font-family: "Jokerman";
+    font-weight: normal;
+    color: #ffff66;
+}
 
-header h1 {
-    /* Ocultar visualmente pero accesible */
+.h1grande{
+    font-size: 4rem;
+}
+
+/*header h1 {
+    /* Ocultar visualmente pero accesible * /
     position: absolute;
     width: 1px;
     height: 1px;
@@ -29,26 +47,19 @@ header h1 {
     clip: rect(0 0 0 0);
     white-space: nowrap;
     border: 0;
-}
+}*/
 
-.mainlogo {
-    height: 100px;
+.logo {
+    height: 150px;
     width: auto;
 }
 
-.logos {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-}
-
 nav {
-    background-color: #fbaf35;
     padding: 0.3rem;
     text-align: center;
-    font-family: "Alfa Slab One", serif;
-    font-weight: normal;
+    background-color:#cc0066;
+    gap: 3rem;
+    border-bottom: 3px solid #ffff66;
 }
 
 .sticky {
@@ -58,8 +69,20 @@ nav {
 }
 
 nav a {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     text-decoration-line: none;
+    /* font-family: "Goudy Old Style"; */
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    color: #ffff66;
+    gap: 3rem;
+}
+
+nav a:hover {
+    text-decoration-line: underline;
+    background-color: #404040;
 }
 
 .logos img {
@@ -74,38 +97,174 @@ nav a {
     padding: 2rem;
 }
 
-/* #calendar {
-            display: none;
-        } */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+}
 
-#calendar img {
-    height: 450px;
+#quien img {
+    height: 300px;
+}
+
+.card0 {
+    background-color: #cc0066;
+    /* border: 3px solid #ffff66; */
+    border-radius: 12px;
+    padding: 1rem;
+    width: 300px;
+    box-sizing: border-box;
+    /* transition: transform 0.2s; */
+    font-family: 'Segoe UI';
+    display: flex;
+    /* text-decoration: none; */
+}
+
+.card0 img {
+    height: 80px;
+    padding-right: 0.5rem;
 }
 
 .link-card {
-    background-color: #5a5a90;
-    border: 3px solid #e7e700;
+    background-color: #cc0066;
+    /* border: 3px solid #ffff66; */
     border-radius: 12px;
     padding: 1rem;
     width: 300px;
     box-sizing: border-box;
     transition: transform 0.2s;
+    font-family: 'Segoe UI';
+    display: flex;
+    text-decoration: none;
 }
 
 .link-card:hover {
     transform: scale(1.05);
-    background-color: #c98600;
+    background-color: #404040;
 }
 
 .link-card a {
-    color: #fbaf35;
+    color: #ffff66;
     font-size: 1.2rem;
     text-decoration: none;
     word-break: break-all;
 }
 
+.link-card img {
+    height: 80px;
+    padding-right: 0.5rem;
+}
+
 .description {
     margin-top: 0.5rem;
     font-size: 0.9rem;
-    color: #e7e700;
+    color: #ffff66;
+    text-decoration: none;
+}
+
+/*estilos dados por chatgpt para la sección de noticias*/
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    background-color: #CC0066; /*var(--rosa-oscuro);*/
+    color: #ffff66; /* var(--amarillo-claro); */
+    padding: 0; /*1rem;*/
+    /* border-radius: 12px; */
+    /*margin-botton: 1rem; */
+    margin: 0;
+    font-family: "Jokerman";
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    /* font-family: "Goudy Old Style"; */
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card {
+    background: #cc0066; /*var(--blanco);*/
+    border: 2px solid var(--rosa-oscuro);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(204, 0, 102, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(204, 0, 102, 0.3);
+    background-color: #404040;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /*background-color: #CC0066; /*var(--amarillo-claro);*/
+}
+
+.card h3 {
+    text-decoration: none;
+    color: #ffff66; /*var(--rosa-oscuro);*/
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.card h3:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    color: #ffff66; /*var(--texto-oscuro); */
+    font-size: 0.95rem;
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.card p:hover {
+    text-decoration: underline;
+}
+
+h4 {
+    background-color: #404040;
+    color: #ffff66;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1.5rem;
+    font-family:  'Segoe UI', sans-serif;
+    font-weight: normal;
+    /* border-radius: 12px; */
+}
+
+.envelope {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    margin-top:1.2rem;
 }
