@@ -109,6 +109,7 @@ main {
     max-width: 1000px;
     margin: auto;
     padding: 1rem;
+    padding-top: 2.4rem;
 }
 
 #quien img {
@@ -176,6 +177,7 @@ section {
     max-width: 1000px;
     margin: auto;
     padding: 1rem;
+    padding-top: 2.4rem;
 }
 
 h2 {
