@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'Punch';
+    src: url('fonts/Punch-6YyZg.otf') format('woff2'),
+    url('fonts/Punch-6YyZg.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -7,19 +16,33 @@ body {
     margin: 0;
     background-color: #015daa;
     color: #015daa;
+    padding-top: 0%;
 }
 
 header {
-    background-color: #fbaf35;
-    padding: 0.1rem;
-    text-align: center;
+    background-color: #015daa;
+    padding: 0;
+    margin: 0;
+/*     text-align: center;
     font-family: "Alfa Slab One", serif;
-    font-weight: normal;
+    font-weight: normal; */
+    
+    /* display:flex; */
+    /* justify-content:center; */
+    /* align-items:center;  */
+    align-items:start;
+    height:320px;
+
+    display:grid;
+    /* grid-template-columns: 180px 1fr 180px; */
+    grid-template-columns: 1fr 360px;
+
+    /* border: 3px solid red; */
 }
 
 
-header h1 {
-    /* Ocultar visualmente pero accesible */
+/* header h1 {
+    / * Ocultar visualmente pero accesible * /
     position: absolute;
     width: 1px;
     height: 1px;
@@ -29,6 +52,38 @@ header h1 {
     clip: rect(0 0 0 0);
     white-space: nowrap;
     border: 0;
+} */
+
+h1{
+    padding-top: 0;
+    margin-top: 0;
+    background:url(images/estadio.webp) center/cover;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    
+    font-family:Punch;
+    font-size:12rem;
+    /* font-size: min(18vw, 28vh); */
+    font-weight:normal;
+    text-align:center;
+    line-height:0.75;
+    -webkit-text-stroke:2px #fbaf35;
+    justify-content: center;
+
+    width: fit-content;
+    justify-self: center;
+
+    /* border: 3px solid yellow; */
+}
+
+#palco{
+    font-size:10rem;
+    letter-spacing:0em;
+}
+
+#num{
+    font-size:12rem;
+    letter-spacing:0em;
 }
 
 .mainlogo {
@@ -37,11 +92,35 @@ header h1 {
 }
 
 .logos {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
+    /* display: flex; */
+    /* display: inline; */
+    /* justify-content: center; */
+    align-items: center;
+    /* gap: 12px; */
+    /* margin-bottom: 1rem; */
+    /* float:right; */
+    padding:0;
+    margin: 0;
+    
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+
+    /* border: 3px solid lime; */
 }
+
+.logos img{
+    display:block;
+    height: 75px;
+}
+
+.derecha{
+    justify-self:end;
+}
+/* 
+.izquierda{
+    justify-self:start;
+} */
 
 nav {
     background-color: #fbaf35;
@@ -60,10 +139,6 @@ nav {
 nav a {
     padding-left: 1rem;
     text-decoration-line: none;
-}
-
-.logos img {
-    height: 80px;
 }
 
 .container {
