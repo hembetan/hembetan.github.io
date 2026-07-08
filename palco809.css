@@ -23,36 +23,12 @@ header {
     background-color: #015daa;
     padding: 0;
     margin: 0;
-/*     text-align: center;
-    font-family: "Alfa Slab One", serif;
-    font-weight: normal; */
-    
-    /* display:flex; */
-    /* justify-content:center; */
-    /* align-items:center;  */
-    align-items:start;
+    align-items:center; 
     height:320px;
 
     display:grid;
-    /* grid-template-columns: 180px 1fr 180px; */
     grid-template-columns: 1fr 360px;
-
-    /* border: 3px solid red; */
 }
-
-
-/* header h1 {
-    / * Ocultar visualmente pero accesible * /
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
-} */
 
 h1{
     padding-top: 0;
@@ -62,18 +38,12 @@ h1{
     -webkit-text-fill-color:transparent;
     
     font-family:Punch;
-    font-size:12rem;
-    /* font-size: min(18vw, 28vh); */
     font-weight:normal;
     text-align:center;
     line-height:0.75;
     -webkit-text-stroke:2px #fbaf35;
-    justify-content: center;
-
-    width: fit-content;
+    display:inline-block;
     justify-self: center;
-
-    /* border: 3px solid yellow; */
 }
 
 #palco{
@@ -91,36 +61,29 @@ h1{
     width: auto;
 }
 
-.logos {
-    /* display: flex; */
-    /* display: inline; */
-    /* justify-content: center; */
-    align-items: center;
-    /* gap: 12px; */
-    /* margin-bottom: 1rem; */
-    /* float:right; */
-    padding:0;
-    margin: 0;
-    
-    display:flex;
-    flex-direction:column;
-    gap:5px;
-
-    /* border: 3px solid lime; */
+.logos{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    /* grid-template-columns: repeat(2, max-content); */
+    gap:12px;
+    justify-content:center;
+    align-content:center;
+    justify-self:center;
+    align-self:center;
 }
 
 .logos img{
-    display:block;
-    height: 75px;
+    /* filter: drop-shadow(0 0 10px #fbaf35); */
+    justify-self: center;
 }
 
-.derecha{
-    justify-self:end;
+.otro{
+    height:90px;
 }
-/* 
-.izquierda{
-    justify-self:start;
-} */
+
+.actual{
+    height: 110px;
+}
 
 nav {
     background-color: #fbaf35;
