@@ -127,20 +127,31 @@ nav a {
     width: 300px;
     box-sizing: border-box;
     transition: transform 0.2s;
+
+
+    color: #015daa;
+    font-size: 1.2rem;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 .link-card:hover {
     transform: scale(1.05);
     background-color: #c98600;
 }
-
+/* 
 .link-card a {
     color: #015daa;
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     word-break: break-all;
-}
+} */
 
 .description {
     margin-top: 0.5rem;
